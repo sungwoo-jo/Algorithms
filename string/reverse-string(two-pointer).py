@@ -4,7 +4,7 @@
 # input: ["H", "a", "n", "n", "a", "h"]
 # output: ["h", "a", "n", "n", "a", "H"]
 
-def result(strs: list[str]) -> None:
+def solution(strs: list[str]) -> None:
     left, right = 0, len(strs) - 1
     while left < right:
         strs[left], strs[right] = strs[right], strs[left]
@@ -12,4 +12,4 @@ def result(strs: list[str]) -> None:
         right -= 1
     print(strs)
 
-result(list(input("문자열 입력: ")))
+solution(list(input("문자열 입력: ")))
