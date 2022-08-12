@@ -10,6 +10,8 @@ def solution(arr: str) -> bool:
         if ar.isalnum():
             result.append(ar.lower())
 
+    print(result)
+
     # 팰린드롬 여부 판별
     while len(result) > 1:
         if result.pop(0) != result.pop():
