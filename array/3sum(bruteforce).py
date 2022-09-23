@@ -1,4 +1,4 @@
-def three_sum(nums: list[int]) -> list[int]:
+def threeSum(nums: list[int]) -> list[int]:
     nums.sort()
     result = []
     for i in range(len(nums) - 2):
@@ -16,4 +16,4 @@ def three_sum(nums: list[int]) -> list[int]:
     return result
 
 nums = [-1, 0, 1, 2, -1, -4]
-print(three_sum(nums))
+print(threeSum(nums))
